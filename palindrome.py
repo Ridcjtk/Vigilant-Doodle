@@ -7,9 +7,12 @@ is_palindrome("Hi, I am Mai Ih")
 True
 '''
 
-
+def remove(input_str): 
+    return input_str.replace(" ","") 
 
 def is_palindrome(input_str): 
-def remove(input_str): 
-    return input_str.replace(" ", "") 
-return input[:].lowercase == input[::-1].lowercase
+    remove(input_str)
+    return input_str.lower() == input_str[::-1].lower()
+
+print(is_palindrome("Hello"))
+print(is_palindrome("Racecar"))
